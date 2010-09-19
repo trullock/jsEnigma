@@ -1,0 +1,71 @@
+<html><head><script language="javascript" type="text/javascript">
+
+    /* array of mappings, so:
+       [0] => 5
+       [1] => 11
+       etc.
+    */
+    var mappings = new Array(5, 11, 13, 6, 12, 7, 4, 17, 22, 0, 14, 20, 15, 23, 25, 8, 24, 21, 19, 16, 1, 9, 2, 18, 3, 10);
+
+    /* create an array which is the opposite of the above, so:
+       [5] => 0
+       [11] => 1
+       etc.
+    */
+    var backwardMappings = new Array(mappings.length);
+    for(var i = 0; i < mappings.length; i++)
+        backwardMappings[mappings[i]] = i;
+
+    // keep track of the "start" of the array
+    var position = 0;
+    
+    // increment the position, keeping it cyclic
+    function IncrementPosition()
+    {
+        position = ++position % mappings.length
+    }
+    
+    // get the forwards mapping
+    function MapForwards(i)
+    {
+        return mappings[(i + position) % mappings.length];
+    }
+    
+    // get the backwards mapping
+    function MapBackwards(i)
+    {
+        return (mappings.length - mod((position - backwardMappings[i]), mappings.length)) % mappings.length;
+        
+        // This works, but looping is crap, why cant we just map backwards?
+        for(var x = 0; x < mappings.length; x++)
+        {
+            if(mappings[(x + position) % mappings.length] == i)
+                return x;
+        }
+    }
+    
+    function mod(X, Y) {
+        var t;
+        t = X % Y;
+        return t < 0 ? t + Y : t;
+    }
+    
+    // see if we are winners or not
+    function Test()
+    {
+        for(var i = 0; i < mappings.length; i++)
+        {
+            for(var j = 0; j < mappings.length; j++)
+            {
+                if(MapBackwards(MapForwards(i)) != i)
+                    document.write('Fail: i=' + i + ', pos=' + position + ', value: ' + MapBackwards(MapForwards(i)) + '<br />');
+                    
+                IncrementPosition();
+            }
+        }
+    }
+    
+    // fingers crossed
+    Test();
+
+</script></head><body></body></html>

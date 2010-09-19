@@ -1,0 +1,258 @@
+<html>
+<head>
+    <title>Enigma</title>
+    <link rel="Stylesheet" href="enigma.css" type="text/css" />
+    <script language="javascript" type="text/javascript" src="jquery-1.2.6.min.js"></script>
+    <script language="javascript" type="text/javascript" src="interface.js"></script>
+    <script language="javascript" type="text/javascript" src="Enigma.js"></script>
+</head>
+<body>
+    <div id="RotorBin">
+        <div id="Rotor4" class="rotor">
+            <div class="numbers">
+                <ul>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>00</li>
+                    <li>01</li>
+                    <li>02</li>
+                    <li>03</li>
+                    <li>04</li>
+                    <li>05</li>
+                    <li>06</li>
+                    <li>07</li>
+                    <li>08</li>
+                    <li>09</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>00</li>
+                    <li>01</li>
+            </ul>
+            </div>
+            <span class="idnumber">4</span>
+            <div class="gears"></div>
+        </div>
+    </div>
+    <div>
+        <div id="OpenLid">Open</div>
+        <div id="CloseLid">Close</div>
+    </div>    
+    <div id="Enigma">
+        <div id="RotorHolder">
+            <div id="Rotors">
+                <div id="Rotor1" class="rotor">
+                    <div class="numbers">
+                        <ul>
+                            <li>23</li>
+                            <li>24</li>
+                            <li>25</li>
+                            <li>00</li>
+                            <li>01</li>
+                            <li>02</li>
+                            <li>03</li>
+                            <li>04</li>
+                            <li>05</li>
+                            <li>06</li>
+                            <li>07</li>
+                            <li>08</li>
+                            <li>09</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li>13</li>
+                            <li>14</li>
+                            <li>15</li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                            <li>19</li>
+                            <li>20</li>
+                            <li>21</li>
+                            <li>22</li>
+                            <li>23</li>
+                            <li>24</li>
+                            <li>25</li>
+                            <li>00</li>
+                            <li>01</li>
+                        </ul>
+                    </div>
+                    <span class="idnumber">1</span>
+                    <div class="gears"></div>
+                </div>
+                <div id="Rotor2" class="rotor">
+                    <div class="numbers">
+                        <ul>
+                            <li>23</li>
+                            <li>24</li>
+                            <li>25</li>
+                            <li>00</li>
+                            <li>01</li>
+                            <li>02</li>
+                            <li>03</li>
+                            <li>04</li>
+                            <li>05</li>
+                            <li>06</li>
+                            <li>07</li>
+                            <li>08</li>
+                            <li>09</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li>13</li>
+                            <li>14</li>
+                            <li>15</li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                            <li>19</li>
+                            <li>20</li>
+                            <li>21</li>
+                            <li>22</li>
+                            <li>23</li>
+                            <li>24</li>
+                            <li>25</li>
+                            <li>00</li>
+                            <li>01</li>
+                        </ul>
+                    </div>
+                    <span class="idnumber">2</span>
+                    <div class="gears"></div>
+                </div>
+                <div id="Rotor3" class="rotor">
+                    <div class="numbers">
+                        <ul>
+                            <li>23</li>
+                            <li>24</li>
+                            <li>25</li>
+                            <li>00</li>
+                            <li>01</li>
+                            <li>02</li>
+                            <li>03</li>
+                            <li>04</li>
+                            <li>05</li>
+                            <li>06</li>
+                            <li>07</li>
+                            <li>08</li>
+                            <li>09</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li>13</li>
+                            <li>14</li>
+                            <li>15</li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                            <li>19</li>
+                            <li>20</li>
+                            <li>21</li>
+                            <li>22</li>
+                            <li>23</li>
+                            <li>24</li>
+                            <li>25</li>
+                            <li>00</li>
+                            <li>01</li>
+                        </ul>
+                    </div>
+                    <span class="idnumber">3</span>
+                    <div class="gears"></div>
+                </div>
+            </div>
+        </div>
+        <img src="lid.png" id="Lid" />
+        <div id="BulbPanel">
+            <div id="BulbTopRow">
+                <div class="bulb">Q</div>
+                <div class="bulb">W</div>
+                <div class="bulb">E</div>
+                <div class="bulb">R</div>
+                <div class="bulb">T</div>
+                <div class="bulb">Z</div>
+                <div class="bulb">U</div>
+                <div class="bulb">I</div>
+                <div class="bulb">O</div>
+            </div>
+            <div id="BulbMiddleRow">
+                <div class="bulb">A</div>
+                <div class="bulb">S</div>
+                <div class="bulb">D</div>
+                <div class="bulb">F</div>
+                <div class="bulb">G</div>
+                <div class="bulb">H</div>
+                <div class="bulb">J</div>
+                <div class="bulb">K</div>
+            </div>
+            <div id="BulbBottomRow">
+                <div class="bulb">P</div>
+                <div class="bulb">Y</div>
+                <div class="bulb">X</div>
+                <div class="bulb">C</div>
+                <div class="bulb">V</div>
+                <div class="bulb">B</div>
+                <div class="bulb">N</div>
+                <div class="bulb">M</div>
+                <div class="bulb">L</div>
+            </div>
+        </div>
+        <div id="Keyboard">
+            <div id="KeyTopRow">
+                <div class="key">Q</div>
+                <div class="key">W</div>
+                <div class="key">E</div>
+                <div class="key">R</div>
+                <div class="key">T</div>
+                <div class="key">Z</div>
+                <div class="key">U</div>
+                <div class="key">I</div>
+                <div class="key">O</div>
+                <br class="clear" />
+            </div>
+            <div id="KeyMiddleRow">
+                <div class="key">A</div>
+                <div class="key">S</div>
+                <div class="key">D</div>
+                <div class="key">F</div>
+                <div class="key">G</div>
+                <div class="key">H</div>
+                <div class="key">J</div>
+                <div class="key">K</div>
+                <br class="clear" />
+            </div>
+            <div id="KeyBottomRow">
+                <div class="key">P</div>
+                <div class="key">Y</div>
+                <div class="key">X</div>
+                <div class="key">C</div>
+                <div class="key">V</div>
+                <div class="key">B</div>
+                <div class="key">N</div>
+                <div class="key">M</div>
+                <div class="key">L</div>
+                <br class="clear" />
+            </div>
+        </div>
+    </div>
+    
+    
+    <textarea id="txtInput" cols="80" rows="10"></textarea>
+    <br />
+    <input type="button" id="btnClearInput" value="Clear" /> <input type="button" id="btnEncrypt" value="Encrypt" /><br />
+    <textarea id="txtOutput" cols="80" rows="10"></textarea>
+
+</body>
+</html>

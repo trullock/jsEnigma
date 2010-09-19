@@ -1,0 +1,250 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body
+{
+    font-size: 10pt;
+}
+.clear
+{
+    clear: both;
+}
+#Enigma
+{
+    background-image: url(panel.jpg);
+    width: 491px;
+    height: 591px;
+    position: relative;
+    float: left;
+    -moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+#Lid
+{
+    width: 468px;
+    height: 228px;
+    position: absolute;
+    top: 13px;
+    left: 11px;
+    z-index: 10;
+}
+
+#BulbPanel
+{
+    position: absolute;
+    top: 255px;
+    left: 43px;   
+}
+#BulbTopRow, #BulbBottomRow
+{
+    width: 405px;
+    height: 39px;
+}
+#BulbMiddleRow
+{
+    width: 405px;
+    height: 39px;
+    margin-left: 20px;
+}
+
+.bulb
+{
+    background-image: url(bulb.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 29px;
+    height: 34px;
+    padding: 5px 8px 0 8px;
+    text-align: center;
+    float: left;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #242011;
+}
+
+.activeBulb
+{
+    color: #bda43f;
+}
+
+#Keyboard
+{
+    position: absolute;
+    top: 400px;
+    left: 23px;
+}
+#KeyTopRow
+{
+    width: 430px;
+    height: 70px;
+}
+#KeyMiddleRow
+{
+    width: 400px;
+    height: 70px;
+    position: absolute;
+    top: 50px;
+    left: 25px;
+}
+#KeyBottomRow
+{
+    width: 430px;
+    height: 70px;
+    top: 100px;
+    position: absolute;
+}
+.key
+{
+    background-image: url(key.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 39px;
+    height: 41px;
+    padding: 12px 4px 0 9px;
+    text-align: center;
+    float: left;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #fff;
+    margin-right: -5px;
+    cursor: pointer;
+}
+
+.activeKey
+{
+    margin-top: 8px;
+    color: #999;
+}
+#RotorBin
+{
+    background-color: #000;
+    width: 400px;
+    height: 100px;
+    float: right;
+}
+#RotorHolder
+{
+    position: absolute;
+    top: 85px;
+    left: 112px;
+    height: 113px;
+    width: 165px;
+}
+#Rotors
+{
+    height: 113px;
+    width: 230px;
+}
+.rotor
+{
+    width: 55px;
+    height: 113px;
+    background-image: url(rotor.png);
+    background-image: no;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: Courier New;
+    overflow: hidden;
+    float: left;
+    margin-left: -6px;
+}
+.rotorHolder
+{
+    width: 47px;
+    height: 113px;
+    float: left;
+    background-image: url(rotor.png);
+    opacity: 0.4;
+	-moz-opacity: 0.4;
+	filter: alpha(opacity=40);
+}
+
+.rotor .numbers
+{
+    padding-left: 3px;
+    position: absolute;
+    width: 17px;
+    height: 80px;
+    overflow: hidden;
+    top: 16px;
+    left: 13px;
+}
+.rotor .numbers ul
+{
+    position: absolute;
+    top: -16px;
+    left: 0;
+    cursor: n-resize;
+}
+.rotor .numbers li
+{
+    margin-bottom: 2px;
+    border-bottom: solid 1px #000;
+    width: 17px;
+    height: 13px;
+    padding-left: 1px;
+}
+.rotor .idnumber
+{
+    position: absolute;
+    top: 48px;
+    left: 34px;
+    color: #222;
+    cursor: move;
+}
+.rotor .gears
+{
+    width: 10px;
+    height: 98px;
+    background-image: url(rotogears.gif);
+    position: absolute;
+    left: 44px;
+    top: 15px;
+    cursor: move;
+}
+
+#CipherTextLog
+{
+    float: right;
+    width: 200px;
+    border: solid 1px #000;
+}
+#PlainTextLog
+{
+    float: right;
+     width: 200px;
+    border: solid 1px #000;
+}
